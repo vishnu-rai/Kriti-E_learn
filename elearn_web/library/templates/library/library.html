@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>E-Learning</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<body >
+ <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="{% 'library:home' %}">E-Learning</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="{% 'library:home' %}">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% 'users:logout' %}">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation -->
+
+    <!-- Carousel Slider -->
+    <div id="carouselLogo" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselLogo" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselLogo" data-slide-to="1"></li>
+            <li data-target="#carouselLogo" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="http://www.facenet.org/wp-content/themes/executive/assets/images/header.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="http://www.facenet.org/wp-content/themes/executive/assets/images/header.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="http://www.facenet.org/wp-content/themes/executive/assets/images/header.jpg" alt="First slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselLogo" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselLogo" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br><br>
+    <!-- Search Bar -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<div class="container">
+    <br/>
+  <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8">
+                            <form class="card card-sm">
+                                <div class="card-body row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <i class="fas fa-search h4 text-body"></i>
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col">
+                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
+                                    </div>
+                                    <!--end of col-->
+                                    <div class="col-auto">
+                                        <button href="{% 'library:search' %}" class="btn btn-lg btn-success" type="submit">Search</button>
+                                    </div>
+                                    <!--end of col-->
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of col-->
+                    </div>
+</div>
+<style>
+  .form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+</style>
+    <!-- Card -->
+    <div class="container container mt-4 mb-5">
+        <hr class="bg-dark mb-4 w-25">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://dummyimage.com/350x250/c7c7c7/000.png" alt="Card image cap">
+                    <div class="card-block p-3">
+                        <h4 class="card-title">Video Lectures</h4>
+                        <p class="card-text">Here's a detailed section of videos, covering almost all major technical fields one tries to venture into. The section one of these lectures consists of a carefully curated list of lectures from various popular websites like Coursera, Udemy etc. The second section consists of lectures that have been created by the students and professors in the different clubs and departments of IIT Guwahati </p>
+                        <a href="#" class="btn btn-primary rounded-0 mb-2">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://dummyimage.com/350x250/c7c7c7/000.png" alt="Card image cap">
+                    <div class="card-block p-3">
+                        <h4 class="card-title">CSS</h4>
+                        <p class="card-text">When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" class="btn btn-primary rounded-0 mb-2">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://dummyimage.com/350x250/c7c7c7/000.png" alt="Card image cap">
+                    <div class="card-block p-3">
+                        <h4 class="card-title">BOOTSTRAP</h4>
+                        <p class="card-text">When an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <a href="#" class="btn btn-primary rounded-0 mb-2">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Card -->
+    <!-- Footer -->
+    <br><br><br>
+    <footer class="footer bg-dark text-white">
+        <!-- Social Icons -->
+        <div class="bg-primary">
+            <div class="container">
+                <div class="row py-4">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Social Icons -->
+        <!-- Footer Links -->
+        <div class="container pt-5 pb-2">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 col-xl-3">
+                    <h4>E-Learn</h4>
+                    <hr class="bg-white mb-2 mt-0 d-inline-block mx-auto w-25">
+                </div>
+            </div>
+        </div>
+        <!-- Footer Links-->
+        <!--hr class="bg-white mx-4 mt-2 mb-1"-->
+    </footer>
+    <!-- Footer -->
+<style >
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css');
+.bg-dark {
+    background-color: #343a40!important;
+}
+
+</style>
+</body>
+</html>
