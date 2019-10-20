@@ -6,4 +6,6 @@ The user will be allowed to upload content in it's feed and to show content on d
 The user will find there departmental and club content in form of video , video link, pdf etc. on department section by choosing the section they want.
 There would be discussion forum at the  end of each content where one user can ask about there doubt
 The admin will get notificationn for request of approval and on approving or dissaproving the user will get a respone
-One user can search in the data according to there intrest and course.
+One user can search in the data according to there interest and course.
+
+The app is meant to facilitate sharing of study materials online in a more efficient manner.
