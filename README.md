@@ -8,6 +8,10 @@ There would be discussion forum at the  end of each content where one user can a
 The admin will get notificationn for request of approval and on approving or dissaproving the user will get a respone
 One user can search in the data according to there interest and course.
 
-The only bug available is that login button get you into the main app without any I'd.
+The only bug available are:
+Login button get you into the main app without any I'd.
+Pdf do not open.
+Book sharing is not available.
+
 
 The app is meant to facilitate sharing of study materials online in a more efficient manner.
