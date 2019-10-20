@@ -9,3 +9,11 @@ The admin will get notificationn for request of approval and on approving or dis
 One user can search in the data according to there interest and course.
 
 The app is meant to facilitate sharing of study materials online in a more efficient manner.
+
+Following bugs are found to be present:
+
+1) Signin authentication
+2) Uploading materials - the PDFs need not to be present necessarily.
+3) PDF viewer is not working.
+4) Sharing of books is not feasible.
+5)Rating system is not integrated.
